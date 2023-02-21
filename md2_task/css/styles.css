@@ -1,1 +1,75 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    padding-top: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    position: relative;
+    border: 1px solid black;
+    background-color: lightgreen;
+    padding: 15px;
+    margin: 20px;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ddd;
+    padding: 0 15px;
+    border: 1px solid black;
+}
+.section:nth-child(1) .title{
+    background-color: lightslategray;
+}
+
+.section:nth-child(2) .title {
+    background-color: lightyellow;
+}
+
+.section:nth-child(3) .title {
+    background-color: lightseagreen;
+}
+
+p {
+    width: 100%;
+    margin-top: 10px;
+    font-family: Helvetica;
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .sec1, .sec2, .sec3 {
+      float: left;
+      width: 30.3%;
+        
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .sec1, .sec2 {
+      float: left;
+      width: 45%;
+      flex: 1 0 0;
+    }
+    .sec3 {
+        float: left;
+        width: 100%;   
+    }
+}
+@media screen and (max-width: 767px) {
+    .sec1, .sec2, .sec3{
+      float: left;
+      width:100%;
+    }
+}
