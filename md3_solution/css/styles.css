@@ -1,0 +1,18 @@
+.navbar-scroll {
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .navbar-scroll.in {
+    top: -50px;
+  }
+  .navbar-scroll.in .navbar-header {
+    height: 0;
+    display: none;
+  }
+  .navbar-scroll.in .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
